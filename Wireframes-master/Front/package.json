@@ -1,0 +1,36 @@
+{
+  "name": "front",
+  "version": "1.0.0",
+  "description": "Front End Code",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack",
+    "start": "webpack-dev-server --open",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Griff",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Griiffiin/CSC264-Projecthttps://github.com/Griiffiin/CSC264-Project"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "html-webpack-plugin": "^4.2.0",
+    "path": "^0.12.7",
+    "postcss-loader": "^3.0.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "@material/button": "^5.1.0",
+    "@material/data-table": "^5.1.0",
+    "@material/drawer": "^5.1.0",
+    "@material/layout-grid": "^5.1.0",
+    "@material/menu": "^5.1.0",
+    "@material/tab-bar": "^5.1.0",
+    "material-components-web": "^5.1.0"
+  }
+}

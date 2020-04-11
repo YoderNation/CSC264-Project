@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <link
+      href="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/material-components-web@v4.0.0/dist/material-components-web.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Front Page</title>
+  </head>
+
+  <body>
+    <!TOP BAR>
+    <div class="mdc-tab-bar" role="tablist">
+      <div class="mdc-tab-scroller">
+        <div class="mdc-tab-scroller__scroll-area">
+          <div class="mdc-tab-scroller__scroll-content">
+            <button
+              class="mdc-tab mdc-tab--active"
+              role="tab"
+              aria-selected="true"
+              tabindex="0"
+            >
+              <span class="mdc-tab__content">
+                <span class="mdc-tab__text-label">XYZ University</span>
+              </span>
+              <span class="mdc-tab-indicator mdc-tab-indicator--active">
+                <span
+                  class="mdc-tab-indicator__content mdc-tab-indicator__content--underline"
+                ></span>
+              </span>
+              <span class="mdc-tab__ripple"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mdc-layout-grid">
+      <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell">
+          <!SIDE MENU>
+          <aside class="mdc-drawer shrine-drawer">
+			
+			<div class="mdc-drawer__content">
+			  <nav class="mdc-list">
+				<a class="mdc-list-item mdc-list-item--activated" aria-selected="true" tabindex="0" href="#">
+				  <span class="mdc-list-item__text">Featured</span>
+				</a>
+				<div class="shrine-select-item-divider mdc-list-divider" role="separator"></div>
+				<a class="mdc-list-item" href="#">
+				  <span class="mdc-list-item__text">Apartment</span>
+				</a>
+				<a class="mdc-list-item" href="#">
+				  <span class="mdc-list-item__text">Accessories</span>
+				</a>
+				
+			  </nav>
+			</div>
+		  </aside>
+        
+        </div>
+        <div class="mdc-layout-grid__cell">
+		  <div class = "mdc-layout-grid--align-right">	
+          <form action="home.html">
+            <div class="mdc-text-field username" align="right">
+              <input
+                type="text"
+                class="mdc-text-field__input"
+                id="username-input"
+                name="username"
+                required
+              />
+              <label class="mdc-floating-label" for="username-input"
+                >Username</label
+              >
+              <div class="mdc-line-ripple"></div>
+            </div>
+            <div class="mdc-text-field password">
+              <input
+                type="password"
+                class="mdc-text-field__input"
+                id="password-input"
+                name="password"
+                required
+                minlength="8"
+              />
+              <label class="mdc-floating-label" for="password-input"
+                >Password</label
+              >
+              <div class="mdc-line-ripple"></div>
+            </div>
+            <div class="button-container">
+              <button class="mdc-button mdc-button--raised next">
+                <div class="mdc-button__ripple"></div>
+                <span class="mdc-button__label">
+                  Login
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+		</div>
+      </div>
+    </div>
+  </body>
+</html>

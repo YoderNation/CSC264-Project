@@ -1,0 +1,47 @@
+@use '@material/button/mdc-button';
+@use '@material/button';
+@use "@material/list/mdc-list";
+@use "@material/menu-surface/mdc-menu-surface";
+@use "@material/menu/mdc-menu";
+@use "@material/drawer/mdc-drawer";
+@import "@material/layout-grid/mdc-layout-grid";
+@use "@material/checkbox/mdc-checkbox"; // Required only for data table with row selection.
+@use "@material/data-table/mdc-data-table";
+
+.foo-button {
+  @include button.container-fill-color(darksalmon);
+}
+
+body {
+  display: flex;
+  height: 100%;
+}
+
+.mdc-drawer-app-content {
+  flex: auto;
+  overflow: auto;
+  position: relative;
+}
+
+.main-content {
+  overflow: auto;
+  height: 100%;
+}
+
+.mdc-text-field username {
+	float: right;
+}
+
+.mdc-list-item {
+	padding-top: 10px;
+
+}
+
+.app-bar {
+  position: absolute;
+}
+
+// only apply this style if below top app bar
+.mdc-top-app-bar {
+  z-index: 7;
+}
