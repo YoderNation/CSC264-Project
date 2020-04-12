@@ -3,6 +3,7 @@ import {MDCList} from "@material/list";
 import {MDCDrawer} from "@material/drawer";
 import {MDCDataTable} from '@material/data-table';
 
+// Material UI Components 
 const dataTable = new MDCDataTable(document.querySelector('.mdc-data-table'));
 const drawer = MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
 
