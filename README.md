@@ -16,7 +16,7 @@ C:\Users\willy\Desktop\Wireframes-master
 
 C:\Users\willy\Desktop\Wireframes-master\Front
 
--In which 'Front' is the folder I'll mainly be working in for this page.
+- In which 'Front' is the folder I'll mainly be working in for this page.
 
 - In your terminal, type 'cd', this will be our command for changing paths. To properly do so, type 'cd <YOUR PATH DIRECTORY>' into the terminal. Hit Enter. When completed it should look like this: 
   
@@ -36,13 +36,13 @@ C:\Users\willy\Desktop\Wireframes-master\Front>
 npm init -y
 ```
 
--This will create a default package.json file, which we will now modify with:
+- This will create a default package.json file, which we will now modify with:
 
 ```
 npm init
 ```
 
--You will be presented with:
+- You will be presented with:
 
 ```
 {
