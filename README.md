@@ -19,7 +19,9 @@ C:\Users\willy\Desktop\Wireframes-master\Front
 - In your terminal, type 'cd', this will be our command for changing paths. To properly do so, type 'cd <YOUR PATH DIRECTORY>' into the terminal. Hit Enter. When completed it should look like this: 
   
 '''  
+
 C:\Users\willy\Desktop\Wireframes-master\Front>
+
 '''
 
 ### Step Three - Setting up npm:
