@@ -164,3 +164,6 @@ i ｢wdm｣: Hash: 919991fba2c692711a22
 - As well as a browser pulled up into your default browser software.
 
 (CURRENTLY WORKING ON INSTALLING REACT AND BABEL, WILL UPDATE)
+
+```
+If you are having issues running scripts, (especially in Linux), you may have file acess issues. See [this link](https://stackoverflow.com/questions/34562496/gulp-error-internal-child-process-js298-throw-errnoexceptionerr-spawn-err) for a potential fix. 
