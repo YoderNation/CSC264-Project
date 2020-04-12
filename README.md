@@ -77,3 +77,90 @@ npm init
    </body>
 </html>
 ```
+
+- Create another file <SAME AS PREVIOUS NAME>.js, we do not have to add anything to this file.
+  
+ ### Step Five - Add Webpack:
+ 
+ - We are going to install our first dependencies, in your terminal that you've used to install other items, copy this line into the terminal: 
+ 
+ ```
+ npm install --save-dev webpack webpack-cli webpack-dev-server
+ ```
+ 
+ - We now need a config file for webpack. In your code editor create another file called 'webpack.config.js' in your base directory, NOT your 'src' folder.
+ 
+ - Copy these lines into your terminal: 
+ 
+ ```
+ npm install --save-dev path
+ ```
+ ```
+ npm install --save-dev html-webpack-plugin
+ ```
+ 
+ - Now, open your package.json file and in the "scripts": {} block, add these two scripts ABOVE the 'test' script:
+ 
+ ```
+ "webpack": "webpack",
+ "start": "webpack-dev-server --open",
+ ```
+ 
+ - Open up your webpack.config.js file again, and add these lines at the top
+ 
+ ```
+ const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+module.exports = {
+    entry: path.join(__dirname, 'src', '<YOUR CHOSEN NAME>.js'),
+    output: {
+        path: path.join(__dirname, 'build'),
+        filename: 'index.bundle.js'
+    },
+    mode: process.env.NODE_ENV || 'development',
+    resolve: {
+        modules: [path.resolve(__dirname, 'src'), 'node_modules']
+    },
+    devServer: {
+        contentBase: path.join(__dirname, 'src')
+    },
+    plugins: [new HtmlWebpackPlugin({
+        template: path.join(__dirname, 'src', '<YOUR CHOSEN NAME>.html')
+    })]
+};
+
+```
+
+-BE SURE to account for the <YOUR CHOSEN NAME> inputs, as they will be based upon what you named your previous .js and .html files.
+  
+### Step Six - Start up local host:
+
+- In the second node.js terminal instance, copy the line:
+
+```
+npm run webpack
+```
+
+- This will build our config with the rest of our files. To start up the local host, copy this line into the same terminal:
+
+```
+npm start
+```
+
+- If completed properly, you should see:
+
+```
+> front@1.0.0 start C:\Users\willy\Desktop\Wireframes-master\Front
+> webpack-dev-server --open
+
+i ｢wds｣: Project is running at http://localhost:8080/
+i ｢wds｣: webpack output is served from /
+i ｢wds｣: Content not from webpack is served from C:\Users\willy\Desktop\Wireframes-master\Front\src
+i ｢wdm｣: wait until bundle finished: /
+i ｢wdm｣: Hash: 919991fba2c692711a22
+```
+
+- As well as a browser pulled up into your default browser software.
+
+(CURRENTLY WORKING ON INSTALLING REACT AND BABEL, WILL UPDATE)
